@@ -1,0 +1,14 @@
+.neptune_logo{
+  width: 62px;
+}
+.navbar-css {
+  background: rgb(83, 159, 201);
+}
+.link-container {
+  display: flex;
+}
+@media (max-width: 996px) {
+  .link-container {
+    flex-direction: column;
+  }
+}

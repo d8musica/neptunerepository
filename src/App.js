@@ -1,26 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router,Route} from "react-router-dom";
+import Header from './components/Header.js'
+import Home from './components/Home.js'
+import About from './components/About.js'
+import Services from './components/Services.js'
+import Wwu from './components/Wwu.js'
+import Contact from './components/Contact.js'
+import Footer from './components/Footer.js' // ctrl + shift + D DUPLICAR
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div className="App">
+          <Header/>
+          <Route exact path='/' component={Home}></Route>
+          <Route exact path='/about' component={About}></Route>
+          <Route exact path='/services' component={Services}></Route>
+          <Route exact path='/workwithus' component={Wwu}></Route>
+          <Route exact path='/contactus' component={Contact}></Route>
+          <Footer/>
+        </div>
+      </Router>
     );
   }
 }
