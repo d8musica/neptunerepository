@@ -6,6 +6,7 @@ import About from './components/About.js'
 import Services from './components/Services.js'
 import Wwu from './components/Wwu.js'
 import Contact from './components/Contact.js'
+import Submited from './components/Submited.js'
 import Footer from './components/Footer.js' // ctrl + shift + D DUPLICAR
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route exact path='/services' component={Services}></Route>
           <Route exact path='/workwithus' component={Wwu}></Route>
           <Route exact path='/contactus' component={Contact}></Route>
+          <Route exact path='/submission_success' component={Submited}></Route>
           <Footer/>
         </div>
       </Router>
