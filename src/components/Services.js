@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from "react-router-dom";
 import './Services.css'
 import Img from '../img/img1.png';
 
@@ -12,13 +13,13 @@ class Services extends Component {
         </div>
         <div className='row'>
           <div className='col s12 m4 l4'>
-            <div className="our-services-img"><img src={Img} alt=""></img></div>
+            <div className="our-services-img"><Link to="/asesorias"><img src={Img} alt=""></img></Link></div>
           </div>
           <div className='col s12 m4 l4'>
-            <div className="our-services-img"><img src={Img} alt=""></img></div>
+            <div className="our-services-img"><Link to="/cmr"><img src={Img} alt=""></img></Link></div>
           </div>
           <div className='col s12 m4 l4'>
-            <div className="our-services-img"><img src={Img} alt=""></img></div>
+            <div className="our-services-img"><Link to="/calibraciones"><img src={Img} alt=""></img></Link></div>
           </div>
         </div>
 
