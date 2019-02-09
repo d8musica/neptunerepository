@@ -27,7 +27,7 @@ class App extends Component {
           <Route exact path='/asesorias' component={Advisory}></Route>
           <Route exact path='/calibraciones' component={Calibrations}></Route>
           <Route exact path='/cmr' component={Cmr}></Route>
-          <Footer/>
+          <Footer Daniel={'Es una gueva'}/>
         </div>
       </Router>
     );
