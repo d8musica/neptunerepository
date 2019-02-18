@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Carousel} from 'react-materialize';
 import './Home.css'
 import Img from '../img/img1.png'
 
-class Home extends Component {
+const Home = () => {
 
-  render() {
+
     return (
       <div className='container'>
         <div className='row'>
@@ -56,7 +56,7 @@ class Home extends Component {
 
       </div>
     );
-  }
+  
 
 }
 

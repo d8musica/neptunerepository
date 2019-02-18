@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Img from '../img/img1.png';
 import './Services.css';
 
-class Calibrations extends Component {
+const Calibrations = () => {
 
-  render() {
+
     return (
       <div className='container'>
         <div className='row'>
@@ -32,7 +32,7 @@ class Calibrations extends Component {
 
       </div>
     );
-  }
+  
 
 }
 

@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
 import './Services.css'
 import Img from '../img/img1.png';
 
-class Services extends Component {
+const Services = () => {
 
-  render() {
+
     return (
       <div className='container'>
         <div className='row'>
@@ -40,7 +40,7 @@ class Services extends Component {
 
       </div>
     );
-  }
+  
 
 }
 
